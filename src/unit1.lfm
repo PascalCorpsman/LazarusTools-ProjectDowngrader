@@ -1,0 +1,45 @@
+object Form1: TForm1
+  Left = 294
+  Height = 161
+  Top = 121
+  Width = 252
+  Caption = 'Form1'
+  ClientHeight = 161
+  ClientWidth = 252
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '2.0.10.0'
+  object Button1: TButton
+    Left = 13
+    Height = 25
+    Top = 13
+    Width = 224
+    Caption = 'Open .lpi file'
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 13
+    Height = 30
+    Top = 48
+    Width = 227
+    Caption = 'Konvertiert ein "neues" .lpi File, so dass es '#13#10'von Lazarus <= 2.0.1 geladen werden kann.'
+    ParentColor = False
+  end
+  object Button2: TButton
+    Left = 13
+    Height = 25
+    Top = 120
+    Width = 224
+    Caption = 'Close'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object OpenDialog1: TOpenDialog
+    DefaultExt = '.lpi'
+    Filter = 'Lazarus Project file|*.lpi|All|*.*'
+    Left = 32
+    Top = 19
+  end
+end
